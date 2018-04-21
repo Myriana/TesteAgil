@@ -1,0 +1,127 @@
+﻿@model IEnumerable<Uvv.TesteAgil.Entidades.Modelos.TipoErro>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Tipo de Erro - Index</h2>
+
+<p>
+    @Html.ActionLink("Novo Tipo de Erro", "Create", null, new { @class = "btn btn-primary" })
+</p>
+
+
+
+@if (TempData["Sucesso"] != null)
+{
+    <input id="msgSucesso" type="text" value="@TempData["Sucesso"]" hidden />
+}
+@if (TempData["Erro"] != null)
+{
+    <input id="msgErro" type="text" value="@TempData["Erro"]" hidden />
+}
+
+<div id="alertSuccess" class="alert alert-success collapse">
+    <a id="closeSuccess" href="#" class="close">&times;</a>
+    <strong>@TempData["Sucesso"]</strong>
+</div>
+
+<div id="alertError" class="alert alert-danger collapse">
+    <a href="#" id="closeError" class="close" data-dismiss="alert">&times;</a>
+    <strong>@TempData["Erro"]</strong>
+</div>
+
+@*<button class="btn btn-primary create">Novo Tipo de Erro <i class="glyphicon glyphicon-plus"></i></button>*@
+<table class="table table-striped" id="gridTipoErro">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gravidade)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gravidade)
+            </td>
+            <td>
+                @Html.ActionLink(" ", "Edit", new { id = item.TipoErroId }, new { @class = "btn btn-primary glyphicon glyphicon-pencil", title = "Editar" }) 
+                @Html.ActionLink(" ", "Details", new { id = item.TipoErroId }, new { @class = "btn btn-default glyphicon glyphicon-search", title = "Detalhar" }) 
+                @Html.ActionLink(" ", "Delete", new { id = item.TipoErroId }, new { @class = "btn btn-danger glyphicon glyphicon-trash", title = "Deletar" })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+@*<div class="modal fade" id="modalTipoErro" tabindex="-1" role="dialog" aria-labelledby="modalTipoErroLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="conteudoModalTipoErro"></div>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var msgSucesso = document.getElementById('msgSucesso');
+            var msgErro = document.getElementById('msgErro');
+
+            if (msgSucesso != null) {
+                $('#alertSuccess').show("fade");
+                setTimeout(function () {
+                    $('#alertSuccess').hide("fade");
+                }, 5000);
+            }
+            if (msgErro != null) {
+                $('#alertError').show("fade");
+                setTimeout(function () {
+                    $('#alertError').hide("fade");
+                }, 5000);
+            }
+
+            $("#closeSucess").click(function () {
+                $('#alertSuccess').hide("fade");
+            });
+            $("#closeError").click(function () {
+                $('#alertError').hide("fade");
+            });
+        });
+    </script>
+
+@*<script>
+        $(function () {
+            $(".create").click(function () {
+                var url = "/TipoErro/Create/";
+                $("#conteudoModalTipoErro").load(url, function () {
+                    $("#modalTipoErro").modal('show');
+                })
+            });
+            $("#btnCriar").click(function () {
+                $.post("/TipoErro/Create", $("#formTipoErroCreate").serialize()
+                ).done(function () {
+                        $("#conteudoModalTipoErro").load("/clientes/index");
+                    }).fail(function () {
+
+                    });
+                $("#modalTipoErro").modal("hide");
+            });
+    })
+</script>*@
+}
+    

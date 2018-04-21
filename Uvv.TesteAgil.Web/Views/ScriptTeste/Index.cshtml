@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Uvv.TesteAgil.Entidades.Modelos.ScriptTeste>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Script de Teste - Index</h2>
+
+<p>
+    @Html.ActionLink("Novo Script de Teste", "Create", null, new { @class = "btn btn-primary" })
+</p>
+
+
+
+@if (TempData["Sucesso"] != null)
+{
+    <input id="msgSucesso" type="text" value="@TempData["Sucesso"]" hidden />
+}
+@if (TempData["Erro"] != null)
+{
+    <input id="msgErro" type="text" value="@TempData["Erro"]" hidden />
+}
+
+<div id="alertSuccess" class="alert alert-success collapse">
+    <a id="closeSuccess" href="#" class="close">&times;</a>
+    <strong>@TempData["Sucesso"]</strong>
+</div>
+
+<div id="alertError" class="alert alert-danger collapse">
+    <a href="#" id="closeError" class="close" data-dismiss="alert">&times;</a>
+    <strong>@TempData["Erro"]</strong>
+</div>
+<table class="table table-striped" id="gridScript">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.ActionLink(" ", "Edit", new { id = item.ScriptTesteId }, new { @class = "btn btn-primary glyphicon glyphicon-pencil", title = "Editar" })
+            @Html.ActionLink(" ", "Details", new { id = item.ScriptTesteId }, new { @class = "btn btn-default glyphicon glyphicon-search", title = "Detalhar" })
+            @Html.ActionLink(" ", "Delete", new { id = item.ScriptTesteId }, new { @class = "btn btn-danger glyphicon glyphicon-trash", title = "Deletar" })
+        </td>
+    </tr>
+}
+
+</table>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var msgSucesso = document.getElementById('msgSucesso');
+            var msgErro = document.getElementById('msgErro');
+
+            if (msgSucesso != null) {
+                $('#alertSuccess').show("fade");
+                setTimeout(function () {
+                    $('#alertSuccess').hide("fade");
+                }, 5000);
+            }
+            if (msgErro != null) {
+                $('#alertError').show("fade");
+                setTimeout(function () {
+                    $('#alertError').hide("fade");
+                }, 5000);
+            }
+
+            $("#closeSucess").click(function () {
+                $('#alertSuccess').hide("fade");
+            });
+            $("#closeError").click(function () {
+                $('#alertError').hide("fade");
+            });
+        });
+    </script>
+}

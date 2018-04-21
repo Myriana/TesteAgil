@@ -1,0 +1,33 @@
+﻿@model Uvv.TesteAgil.Entidades.Modelos.TipoErro
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes do Tipo de Erro</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gravidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gravidade)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.TipoErroId }, new { @class = "btn btn-primary" }) 
+    @Html.ActionLink("Voltar", "Index", null, new { @class = "btn btn-default" })
+</p>
