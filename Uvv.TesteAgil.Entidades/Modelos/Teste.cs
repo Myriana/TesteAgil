@@ -24,7 +24,10 @@ namespace Uvv.TesteAgil.Entidades.Modelos
         public string Situacao { get; set; }
 
         public virtual CasoTeste CasoTeste { get; set; }
+
+        public int DesenvolvedorId { get; set; }
         public virtual Membro Desenvolvedor { get; set; }
+        public int TesterId { get; set; }
         public virtual Membro Tester { get; set; }
 
         public virtual ICollection<TipoErro> Erros { get; set; }

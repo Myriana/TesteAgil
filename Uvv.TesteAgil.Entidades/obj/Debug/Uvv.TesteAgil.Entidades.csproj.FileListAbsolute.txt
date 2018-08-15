@@ -9,3 +9,14 @@ C:\Users\Myriana\Documents\Myriana\Repositorio\Teste Agil\Uvv.TesteAgil\Uvv.Test
 C:\Users\Myriana\Documents\Myriana\Repositorio\Teste Agil\Uvv.TesteAgil\Uvv.TesteAgil.Entidades\obj\Debug\Uvv.TesteAgil.Entidades.dll
 C:\Users\Myriana\Documents\Myriana\Repositorio\Teste Agil\Uvv.TesteAgil\Uvv.TesteAgil.Entidades\obj\Debug\Uvv.TesteAgil.Entidades.pdb
 C:\Users\Myriana\Documents\Myriana\Repositorio\Teste Agil\Uvv.TesteAgil\Uvv.TesteAgil.Entidades\obj\Debug\Uvv.TesteAgil.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Entidades\bin\Debug\Uvv.TesteAgil.Entidades.dll.config
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Entidades\bin\Debug\Uvv.TesteAgil.Entidades.dll
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Entidades\bin\Debug\Uvv.TesteAgil.Entidades.pdb
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Entidades\bin\Debug\EntityFramework.dll
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Entidades\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Entidades\bin\Debug\EntityFramework.xml
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Entidades\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Entidades\obj\Debug\Uvv.TesteAgil.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Entidades\obj\Debug\Uvv.TesteAgil.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Entidades\obj\Debug\Uvv.TesteAgil.Entidades.dll
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Entidades\obj\Debug\Uvv.TesteAgil.Entidades.pdb

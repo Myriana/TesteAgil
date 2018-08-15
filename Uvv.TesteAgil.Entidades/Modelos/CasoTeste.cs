@@ -35,6 +35,8 @@ namespace Uvv.TesteAgil.Entidades.Modelos
         public int CenarioTesteId { get; set; }
         public virtual CenarioTeste CenarioTeste { get; set; }
 
+        public virtual ICollection<Passo> Passos { get; set; }
+
         public virtual ICollection<Teste> Testes { get; set; }
     }
 }

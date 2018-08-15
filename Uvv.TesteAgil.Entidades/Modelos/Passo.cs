@@ -17,6 +17,7 @@ namespace Uvv.TesteAgil.Entidades.Modelos
         [Required(ErrorMessage = "Campo obrigatório")]
         public int Numero { get; set; }
 
-        public virtual ScriptTeste ScriptTeste { get; set; }
+        public int CasoTesteId { get; set; }
+        public virtual CasoTeste CasoTeste { get; set; }
     }
 }

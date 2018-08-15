@@ -192,7 +192,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\ScriptTesteController.cs" />
     <Compile Include="Controllers\TipoErroController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -272,11 +271,6 @@
     <Content Include="Views\TipoErro\Details.cshtml" />
     <Content Include="Views\TipoErro\Edit.cshtml" />
     <Content Include="Views\TipoErro\Index.cshtml" />
-    <Content Include="Views\ScriptTeste\Create.cshtml" />
-    <Content Include="Views\ScriptTeste\Delete.cshtml" />
-    <Content Include="Views\ScriptTeste\Details.cshtml" />
-    <Content Include="Views\ScriptTeste\Edit.cshtml" />
-    <Content Include="Views\ScriptTeste\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

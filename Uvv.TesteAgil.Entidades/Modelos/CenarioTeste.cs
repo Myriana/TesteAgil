@@ -20,8 +20,6 @@ namespace Uvv.TesteAgil.Entidades.Modelos
         public virtual Funcionalidade Funcionalidade { get; set; }
         public int PlanoTesteId { get; set; }
         public virtual PlanoTeste PlanoTeste { get; set; }
-        public int? ScriptTesteId { get; set; }
-        public virtual ScriptTeste ScriptTeste { get; set; }
 
         public virtual ICollection<CasoTeste> Casos { get; set; }
     }

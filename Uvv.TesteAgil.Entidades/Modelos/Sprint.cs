@@ -27,7 +27,7 @@ namespace Uvv.TesteAgil.Entidades.Modelos
 
         [Display(Name = "Observação")]
         [Column(TypeName = "VARCHAR")]
-        [StringLength(100)]
+        [StringLength(300)]
         public string Observacao { get; set; }
 
         public virtual Projeto Projeto { get; set; }

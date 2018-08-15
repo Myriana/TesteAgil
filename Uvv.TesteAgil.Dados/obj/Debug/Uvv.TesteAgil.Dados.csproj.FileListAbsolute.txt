@@ -16,3 +16,19 @@ C:\Users\Myriana\Documents\Myriana\Repositorio\Teste Agil\Uvv.TesteAgil\Uvv.Test
 C:\Users\Myriana\Documents\Myriana\Repositorio\Teste Agil\Uvv.TesteAgil\Uvv.TesteAgil.Dados\obj\Debug\Uvv.TesteAgil.Dados.csproj.GenerateResource.Cache
 C:\Users\Myriana\Documents\Myriana\Repositorio\Teste Agil\Uvv.TesteAgil\Uvv.TesteAgil.Dados\obj\Debug\Uvv.TesteAgil.Dados.Migrations.MigracaoDois.resources
 C:\Users\Myriana\Documents\Myriana\Repositorio\Teste Agil\Uvv.TesteAgil\Uvv.TesteAgil.Dados\obj\Debug\Uvv.TesteAgil.Dados.Migrations.MigracaoTres.resources
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\bin\Debug\Uvv.TesteAgil.Dados.dll.config
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\bin\Debug\Uvv.TesteAgil.Dados.dll
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\bin\Debug\Uvv.TesteAgil.Dados.pdb
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\bin\Debug\EntityFramework.dll
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\bin\Debug\Uvv.TesteAgil.Entidades.dll
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\bin\Debug\Uvv.TesteAgil.Entidades.pdb
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\bin\Debug\Uvv.TesteAgil.Entidades.dll.config
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\bin\Debug\EntityFramework.xml
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\obj\Debug\Uvv.TesteAgil.Dados.csprojResolveAssemblyReference.cache
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\obj\Debug\Uvv.TesteAgil.Dados.csproj.CoreCompileInputs.cache
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\obj\Debug\Uvv.TesteAgil.Dados.dll
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\obj\Debug\Uvv.TesteAgil.Dados.pdb
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\obj\Debug\Uvv.TesteAgil.Dados.Migrations.TADBversao1.resources
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.Dados\obj\Debug\Uvv.TesteAgil.Dados.csproj.GenerateResource.Cache

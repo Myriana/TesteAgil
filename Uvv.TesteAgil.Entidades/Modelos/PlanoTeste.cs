@@ -13,7 +13,7 @@ namespace Uvv.TesteAgil.Entidades.Modelos
         [Display(Name = "Descrição")]
         [Required(ErrorMessage = "Campo obrigatório")]
         [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
+        [StringLength(200)]
         public string Descricao { get; set; }
         [Required(ErrorMessage = "Campo obrigatório")]
         [DataType(DataType.DateTime, ErrorMessage = "Data inválida")]

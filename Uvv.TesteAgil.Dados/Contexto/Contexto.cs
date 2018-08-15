@@ -26,7 +26,6 @@ namespace Uvv.TesteAgil.Dados.Contexto
         public DbSet<CenarioTeste> CenarioTeste { get; set; }
         public DbSet<CasoTeste> CasoTeste { get; set; }
         public DbSet<Teste> Teste { get; set; }
-        public DbSet<ScriptTeste> ScriptTeste { get; set; }
         public DbSet<Passo> Passo { get; set; }
         public DbSet<TipoErro> TipoErro { get; set; }
         public DbSet<Funcionalidade> Funcionalidade { get; set; }

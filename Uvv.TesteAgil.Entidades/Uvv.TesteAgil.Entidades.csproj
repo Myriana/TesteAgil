@@ -55,7 +55,6 @@
     <Compile Include="Modelos\Passo.cs" />
     <Compile Include="Modelos\PlanoTeste.cs" />
     <Compile Include="Modelos\Projeto.cs" />
-    <Compile Include="Modelos\ScriptTeste.cs" />
     <Compile Include="Modelos\Sprint.cs" />
     <Compile Include="Modelos\Teste.cs" />
     <Compile Include="Modelos\TipoErro.cs" />

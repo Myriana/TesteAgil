@@ -18,6 +18,7 @@ namespace Uvv.TesteAgil.Entidades.Modelos
         [StringLength(50)]
         public string Nome { get; set; }
 
+        public int CasoTesteId { get; set; }
         public virtual CasoTeste CasoTeste { get; set; }
         public virtual ICollection<Passo> Passos { get; set; }
     }

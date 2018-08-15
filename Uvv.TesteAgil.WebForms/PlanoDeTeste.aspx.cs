@@ -15,7 +15,6 @@ namespace Uvv.TesteAgil.WebForms
     {
         //Repositórios necessários
         PlanoTesteRepositorio repoPlano = new PlanoTesteRepositorio();
-        ScriptTesteRepositorio repoScript = new ScriptTesteRepositorio();
         CasoTesteRepositorio repoCaso = new CasoTesteRepositorio();
         CenarioTesteRepositorio repoCenario = new CenarioTesteRepositorio();
         MembroRepositorio repoMembro = new MembroRepositorio();

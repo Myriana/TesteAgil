@@ -51,17 +51,9 @@
     <Compile Include="DAL\MembroDAL.cs" />
     <Compile Include="DAL\PlanoTesteDAL.cs" />
     <Compile Include="DAL\ProjetoDAL.cs" />
-    <Compile Include="Migrations\201804012358521_TADB-Migracao-Inicial.cs" />
-    <Compile Include="Migrations\201804012358521_TADB-Migracao-Inicial.Designer.cs">
-      <DependentUpon>201804012358521_TADB-Migracao-Inicial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804091608541_MigracaoDois.cs" />
-    <Compile Include="Migrations\201804091608541_MigracaoDois.Designer.cs">
-      <DependentUpon>201804091608541_MigracaoDois.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804100153144_MigracaoTres.cs" />
-    <Compile Include="Migrations\201804100153144_MigracaoTres.Designer.cs">
-      <DependentUpon>201804100153144_MigracaoTres.cs</DependentUpon>
+    <Compile Include="Migrations\201808061726104_TADB-versao-1.cs" />
+    <Compile Include="Migrations\201808061726104_TADB-versao-1.Designer.cs">
+      <DependentUpon>201808061726104_TADB-versao-1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,7 +65,6 @@
     <Compile Include="Repositorio\PlanoTesteRepositorio.cs" />
     <Compile Include="Repositorio\ProjetoRepositorio.cs" />
     <Compile Include="Repositorio\RepositorioBase.cs" />
-    <Compile Include="Repositorio\ScriptTesteRepositorio.cs" />
     <Compile Include="Repositorio\SprintRepositorio.cs" />
     <Compile Include="Repositorio\TipoErroRepositorio.cs" />
   </ItemGroup>
@@ -88,14 +79,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201804012358521_TADB-Migracao-Inicial.resx">
-      <DependentUpon>201804012358521_TADB-Migracao-Inicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804091608541_MigracaoDois.resx">
-      <DependentUpon>201804091608541_MigracaoDois.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804100153144_MigracaoTres.resx">
-      <DependentUpon>201804100153144_MigracaoTres.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201808061726104_TADB-versao-1.resx">
+      <DependentUpon>201808061726104_TADB-versao-1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

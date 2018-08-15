@@ -11,17 +11,17 @@ namespace Uvv.TesteAgil.Entidades.Modelos
 
         [Required(ErrorMessage = "Campo obrigatório")]
         [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
+        [StringLength(200)]
         public string Nome { get; set; }
         [Display(Name = "E-mail")]
         [Required(ErrorMessage = "Campo obrigatório")]
         [DataType(DataType.EmailAddress, ErrorMessage = "E-mail inválido")]
         [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
+        [StringLength(100)]
         public string Email { get; set; }
         [Required(ErrorMessage = "Campo obrigatório")]
         [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
+        [StringLength(100)]
         public string Senha { get; set; }
         [Column(TypeName = "VARCHAR")]
         [StringLength(11)]

@@ -215,7 +215,6 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Plano.aspx" />
     <Content Include="PlanoDeTeste.aspx" />
-    <Content Include="ScriptDeTeste.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -404,13 +403,6 @@
       <DependentUpon>PlanoDeTeste.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScriptDeTeste.aspx.cs">
-      <DependentUpon>ScriptDeTeste.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ScriptDeTeste.aspx.designer.cs">
-      <DependentUpon>ScriptDeTeste.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
