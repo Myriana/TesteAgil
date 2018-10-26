@@ -19,10 +19,9 @@ namespace Uvv.TesteAgil.Entidades.Modelos
         public DateTime Data { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório")]
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
-        public string Situacao { get; set; }
+        public int Situacao { get; set; }
 
+        public int CasoTesteId { get; set; }
         public virtual CasoTeste CasoTeste { get; set; }
 
         public int DesenvolvedorId { get; set; }

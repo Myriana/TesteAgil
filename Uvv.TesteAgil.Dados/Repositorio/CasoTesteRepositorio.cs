@@ -23,5 +23,15 @@ namespace Uvv.TesteAgil.Dados.Repositorio
         {
             return db.CasoTeste.Where(x => x.CenarioTeste.PlanoTeste.PlanoTesteId == idPlano)?.ToList();
         }
+
+        public void AdicionarPasso(Passo p)
+        {
+            db.Passo.Add(p);
+        }
+
+        public void DeletarPasso(Passo p)
+        {
+            db.Passo.Remove(p);
+        }
     }
 }

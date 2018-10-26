@@ -13,6 +13,10 @@ namespace Uvv.TesteAgil.Dados.Repositorio
         {
             return db.Funcionalidade.FirstOrDefault(x => x.FuncionalidadeId == id);
         }
+        public Funcionalidade ObterFuncionalidadePorEstoriaId(long idEstoria)
+        {
+            return db.Funcionalidade.FirstOrDefault(x => x.EstoriaId == idEstoria);
+        }
         public List<Funcionalidade> ObterFuncionalidadesPorPlano(long idPlano)
         {
             return db.PlanoTeste.FirstOrDefault(x => x.PlanoTesteId == idPlano).Funcionalidades?.ToList();
@@ -20,7 +24,7 @@ namespace Uvv.TesteAgil.Dados.Repositorio
 
         public List<Funcionalidade> ObterFuncionalidadesNaoUsadasPorPlano(long idPlano)
         {
-            var funcionalidades = db.PlanoTeste.FirstOrDefault(p => p.PlanoTesteId == idPlano)?.Funcionalidades;
+            var funcionalidades = db.PlanoTeste.FirstOrDefault(p => p.PlanoTesteId == idPlano)?.Funcionalidades.Where(f => f.Testada == true);
             if(funcionalidades == null) return null;
             List<Funcionalidade> funcionalidadesNaoUsadas = new List<Funcionalidade>();
             foreach(var func in funcionalidades)

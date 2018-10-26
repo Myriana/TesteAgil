@@ -13,6 +13,15 @@ namespace Uvv.TesteAgil.WebForms {
     public partial class TipoDeErro {
         
         /// <summary>
+        /// Controle updTpErro.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updTpErro;
+        
+        /// <summary>
         /// Controle msgSucesso.
         /// </summary>
         /// <remarks>
@@ -29,15 +38,6 @@ namespace Uvv.TesteAgil.WebForms {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label msgErro;
-        
-        /// <summary>
-        /// Controle updTpErro.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel updTpErro;
         
         /// <summary>
         /// Controle txtTipoErroId.

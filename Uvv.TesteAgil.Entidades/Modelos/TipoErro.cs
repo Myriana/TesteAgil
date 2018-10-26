@@ -16,9 +16,7 @@ namespace Uvv.TesteAgil.Entidades.Modelos
         public string Descricao { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório")]
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(30)]
-        public string Gravidade { get; set; }
+        public int Gravidade { get; set; }
 
         public ICollection<Teste> Testes { get; set; }
     }

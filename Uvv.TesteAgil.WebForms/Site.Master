@@ -7,14 +7,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Teste Ágil</title>
+    <title><%: Page.Title %></title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/Content/Images/LogoIcon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <globalization culture="pt-BR" requestEncoding="utf-8" responseEncoding="utf-8" uiCulture="pt-BR"/>
 </head>
 <body>
     <style>
@@ -81,7 +81,6 @@
                             <img src="Content/Images/Logo.png" height="50" /></li>
                         <li><a runat="server" href="~/">Página inicial</a></li>
                         <li><a runat="server" href="~/PlanoDeTeste.aspx">Plano de Teste</a></li>
-                        <li><a runat="server" href="~/ScriptDeTeste.aspx">Script de Teste</a></li>
                         <li><a runat="server" href="~/TipoDeErro.aspx">Tipo de Erro</a></li>
                         <li><a runat="server" href="#">Relatórios</a></li>
                     </ul>

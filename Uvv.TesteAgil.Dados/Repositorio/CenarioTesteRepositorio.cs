@@ -16,7 +16,17 @@ namespace Uvv.TesteAgil.Dados.Repositorio
 
         public List<CenarioTeste> ObterCenariosPorPlano(long idPlano)
         {
-            return db.CenarioTeste.Where(x => x.PlanoTeste.PlanoTesteId == idPlano)?.ToList();
+            List<CenarioTeste> cenariosRetorno = new List<CenarioTeste>();
+            var cenarios = db.CenarioTeste.Where(x => x.PlanoTeste.PlanoTesteId == idPlano).ToList();
+
+            foreach (var c in cenarios)
+            {
+                if (c.Funcionalidade == null)
+                    c.Funcionalidade = db.Funcionalidade.Find(c.FuncionalidadeId);
+                cenariosRetorno.Add(c);
+            }
+
+            return cenariosRetorno;
         }
 
         public CenarioTeste ObterCenarioPorFuncionalidade(int idFuncionalidade)

@@ -266,3 +266,7 @@ C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.W
 C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.WebForms\obj\Debug\Uvv.TesteAgil.WebForms.csproj.CoreCompileInputs.cache
 C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.WebForms\obj\Debug\Uvv.TesteAgil.WebForms.dll
 C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.WebForms\obj\Debug\Uvv.TesteAgil.WebForms.pdb
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.WebForms\bin\itextsharp.dll
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.WebForms\bin\itextsharp.xml
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.WebForms\bin\TuesPechkin.dll
+C:\Users\Myriana\Documents\Myriana\Repositorio\Git\Uvv.TesteAgil\Uvv.TesteAgil.WebForms\bin\TuesPechkin.Wkhtmltox.AnyCPU.dll

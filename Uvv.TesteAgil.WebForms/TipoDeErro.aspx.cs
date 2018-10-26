@@ -56,7 +56,7 @@ namespace Uvv.TesteAgil.WebForms
                         var tpErro = new TipoErro
                         {
                             Descricao = txtDescricao.Text,
-                            Gravidade = ddlGravidade.SelectedItem.Text
+                            Gravidade = int.Parse(ddlGravidade.SelectedValue)
                         };
 
                         repo.Adicionar(tpErro);
@@ -79,7 +79,7 @@ namespace Uvv.TesteAgil.WebForms
                         }
 
                         tipoErro.Descricao = txtDescricao.Text;
-                        tipoErro.Gravidade = ddlGravidade.SelectedItem.Text;
+                        tipoErro.Gravidade = int.Parse(ddlGravidade.SelectedValue);
 
                         repo.Atualizar(tipoErro);
                         repo.Commit();
@@ -88,15 +88,16 @@ namespace Uvv.TesteAgil.WebForms
                     RecarregarGrid();
 
                     msgSucesso.Text = "Tipo de Erro cadastrado com sucesso";
-                    ClientScript.RegisterStartupScript(this.GetType(), "Pop", "openSuccessMsg();", true);
+                    ScriptManager.RegisterStartupScript(updTpErro, updTpErro.GetType(), "Pop", "openSuccessMsg();", true);
                     msgSucesso.DataBind();                    
                 }
                 catch (Exception ex)
                 {
                     LimparCamposModal();
                     msgErro.Text =  ex.Message;
-                    ClientScript.RegisterStartupScript(this.GetType(), "Pop", "openErrorMsg();", true);
+                    msgErro.Text = "Erro: " + ex.Message;
                     msgErro.DataBind();
+                    ScriptManager.RegisterStartupScript(updTpErro, updTpErro.GetType(), "Pop", "openErrorMsg();", true);
                 }
             }
         }
@@ -143,13 +144,7 @@ namespace Uvv.TesteAgil.WebForms
                         {
                             txtTipoErroId.Value = tipoErro.TipoErroId.ToString();
                             txtDescricao.Text = tipoErro.Descricao;
-                            //Context.Server.HtmlDecode(descricaoEncoded);
-                            if (tipoErro.Gravidade == "Médio")
-                                ddlGravidade.SelectedValue = "2";
-                            else if (tipoErro.Gravidade == "Alto")
-                                ddlGravidade.SelectedValue = "3";
-                            else
-                                ddlGravidade.SelectedValue = "1";
+                            ddlGravidade.SelectedValue = tipoErro.Gravidade.ToString();
 
                             //ClientScript.RegisterStartupScript(this.GetType(), "Pop", "openModal();", true);
 
@@ -169,11 +164,12 @@ namespace Uvv.TesteAgil.WebForms
                                 if (emUso)
                                     throw new Exception("Tipo de erro está sendo utilizado em um ou mais testes");
                                 repo.Deletar(tipoErro);
+                                repo.Commit();
                                 RecarregarGrid();
 
-                                msgSucesso.Text = "Tipo de Erro cadastrado com sucesso";
+                                msgSucesso.Text = "Tipo de Erro excluído com sucesso";
                                 msgSucesso.DataBind();
-                                ClientScript.RegisterStartupScript(this.GetType(), "Pop", "openSuccessMsg();", true);
+                                ScriptManager.RegisterStartupScript(updTpErro, updTpErro.GetType(), "Pop", "openSuccessMsg();", true);
                             }
                         }
                         catch (Exception ex)
@@ -186,8 +182,8 @@ namespace Uvv.TesteAgil.WebForms
             catch (Exception ex)
             {
                 msgErro.Text = ex.Message;
-                msgSucesso.DataBind();
-                ClientScript.RegisterStartupScript(this.GetType(), "Pop", "openErrorMsg();", true);
+                msgErro.DataBind();
+                ScriptManager.RegisterStartupScript(updTpErro, updTpErro.GetType(), "Pop", "openErrorMsg();", true);
             }
         }
 
@@ -206,7 +202,7 @@ namespace Uvv.TesteAgil.WebForms
         protected void btnCriar_Click(object sender, EventArgs e)
         {
             LimparCamposModal();
-            ClientScript.RegisterStartupScript(this.GetType(), "Pop", "openModal();", true);
+            ScriptManager.RegisterStartupScript(updTpErro, updTpErro.GetType(), "Pop", "openModal();", true);
         }
     }
 }

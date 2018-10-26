@@ -17,11 +17,10 @@ namespace Uvv.TesteAgil.Dados.Repositorio
 
         public bool VerificaUso(int id)
         {
-            var qntTestes = db.TipoErro.FirstOrDefault(x => x.TipoErroId == id).Testes.Count();
-            if (qntTestes == 0)
-                return false;
-            else
-                return true;
+            var tipoErro = db.TipoErro.Include("Testes").SingleOrDefault(t => t.TipoErroId == id);
+            if (tipoErro.Testes == null) return false;
+            if (tipoErro.Testes.Count == 0) return false;
+            return true;
         }
 
         public bool ExisteTipoErroDescricao(string descricao)
@@ -53,6 +52,12 @@ namespace Uvv.TesteAgil.Dados.Repositorio
                 }
             }
             return retorno;
+        }
+
+        public List<TipoErro> ObterTipoErroPorTeste(int idTeste)
+        {
+            var erros = db.Teste.FirstOrDefault(t => t.TesteId == idTeste)?.Erros;
+            return erros.ToList() ?? null;
         }
     }
 }
